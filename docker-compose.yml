@@ -1,0 +1,35 @@
+
+services:
+# acessei o postgres e alterei a senha
+#  ALTER USER postgres WITH PASSWORD '12345';
+  postgres:
+    image: leogloriainfnet/postgres-tp2-spring:2.0-win
+    container_name: lucas_ssouza_tp3_Part1
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - "5432:5432"
+
+
+  guilda-es:
+    image: leogloriainfnet/elastic-tp2-spring:1.0-windows
+    container_name: guilda-es
+    ports:
+      - "9200:9200"
+    environment:
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    restart: always
+
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:9.3.1
+    container_name: guilda-kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://guilda-es:9200
+    depends_on:
+      - guilda-es
