@@ -35,6 +35,9 @@ E aproveite o registro da guilda  ⚔️
 | 9200   | Elastic  |
 | 5601   | Kibana   |
 
+
+
+
 # na pasta PostQuerys.Aventureiro 
 
 Esta alumas querys que testei no api 
@@ -102,6 +105,12 @@ Aqui eu utilizei o ElasticSearch e criando filtro para materialized View
 ### Materialized View 
 
 Aqui Mapiei o Materialized e fiz um filtro para verificar os ultimos 15 dias do rank missao para aventureiros 
+
+Aqui esta o print do quinzeDias do rank funcionando
+
+![quinzeDias](imagens/image.png)
+
+
 
 ### ElasticSearch 
 
