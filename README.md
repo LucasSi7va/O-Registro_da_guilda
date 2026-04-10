@@ -50,13 +50,13 @@ E aqui esta as 3 partes explicando
 
 Cada etapa do projeto está separada por branches:
 
-- [Parte 1 - Estrutura inicial](https://github.com/seu-usuario/seu-repo/tree/parte1)
-- [Parte 2 - Integração com JPA](https://github.com/seu-usuario/seu-repo/tree/parte2)
-- [Parte 3 - Elasticsearch](https://github.com/seu-usuario/seu-repo/tree/parte3)
+- [Parte 1 - Estrutura inicial](https://github.com/LucasSi7va/O-Registro_da_guilda/tree/PARTE1)
+- [Parte 2 - Integração com JPA](https://github.com/LucasSi7va/O-Registro_da_guilda/tree/PARTE2)
+- [Parte 3 - Elasticsearch](https://github.com/seu-usuario/seu-repo/tree/parte3](https://github.com/LucasSi7va/O-Registro_da_guilda/tree/main))
 
 ---
 
-# [Parte 1](#) 
+# [Parte 1](https://github.com/LucasSi7va/O-Registro_da_guilda/tree/PARTE1) 
 eu criei uma API-REST no SpringBoot 
 onde criei as dtos,service,controller 
 
@@ -78,7 +78,7 @@ O Controller utilizei para receber as requisições do cliente como HTTP e chama
 Utilizei o service para criar , atualizar, remover e filtrar os aventureiros e companheiros 
 
 ---
-# [PARTE 2 ](#)
+# [PARTE 2 ](https://github.com/LucasSi7va/O-Registro_da_guilda/tree/PARTE2)
 
 Aqui eu já utilizei o JPA(Banco de dados) integrando para API-REST  
 onde criei as entidades, repositorios, testes 
